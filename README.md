@@ -1,1 +1,1 @@
-大二做的简单blog，上传项目测试用，just a test，upload simple project.
+基于hibernate的，简单练习用blog，没有上传数据库表，
