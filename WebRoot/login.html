@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>login.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=gbk">
+    <script type="text/javascript">
+		<!--
+		var xmlHttp;
+		var account;
+		
+		function clearvalue(x){
+		document.getElementById(x).value="";
+		}
+		
+		function checkForm()
+		{
+		   var theForm=document.apLogin;
+           account = document.forms[0].elements["register.account"].value
+
+			if (account=="")
+			{
+			alert("用户名不能为空！");
+			document.forms[0].elements["register.account"].focus();
+			return false;
+			}
+			else if (document.forms[0].elements["register.password"].value=="")
+			{
+			alert("密码不能为空！");
+			document.forms[0].elements["register.password"].focus();
+			return false;
+			}
+		
+			else
+			{
+			return true;
+			}
+		}
+		-->
+	</script>
+
+  </head>
+		<style type="text/css">
+			<!--
+			body {
+				background-image: url(image/bg.gif);
+			}
+			
+			.style16 {
+				font-size: 12px
+			}
+			
+			a:link {
+				color: #000000;
+				text-decoration: none;
+			}
+			
+			a:visited {
+				color: #333333;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #CC9900;
+				text-decoration: underline;
+			}
+			
+			a:active {
+				color: #CC9900;
+				text-decoration: none;
+			}
+			
+			.style25 {
+				font-size: 14px
+			}
+			
+			.style26 {
+				font-size: 18px
+			}
+			-->
+		</style>
+	</head>
+
+	<body>
+		<table width="760" border="0" align="center" cellpadding="0"
+			cellspacing="0">
+			<tr>
+				<td width="760" height="179" background="image/head.jpg">
+					&nbsp;
+				</td>
+			</tr>
+		</table>
+		<table width="760" height="36" border="0" align="center"
+			cellpadding="0" cellspacing="0">
+			<tr>
+				<td bgcolor="#ffffff">
+					&nbsp;
+				</td>
+			</tr>
+		</table>
+		<table width="760" height="389" border="0" align="center"
+			bgcolor="#FFFFFF">
+			<tr>
+				<td height="285" valign="top">
+					<table width="750" height="253" border="1"
+						style="border-collapse: collapse" bordercolor="#7B9E31"
+						cellpadding="0" cellspacing="0">
+						<tr>
+							<td height="51" align="center" valign="middle" bgcolor="#7B9E31"
+								style="padding-left: 100px; padding-right: 100px">
+								<marquee direction="left" scrollamount="4">
+									<div class="move" id="moveid">
+										<span class="style26">电信报表系统</span>
+									</div>
+								</marquee>
+							</td>
+						</tr>
+						<tr>
+							<td height="38" valign="middle" style="padding-left: 10px">
+								<span class="style25">用户登录&gt;&gt;</span>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="middle">
+									<form method="post" name="apLogin" id="apLogin" action="login.action" onsubmit="return checkForm();">
+									<table width="331" height="94" border="0">
+									<tr height="130">
+									<td align="center">
+										<br>
+										用户账号
+										<input type="text" name="register.account" id="account" onfocus="clearvalue(this.id)" size="18" maxlength="30"  /><br><br>
+										用户密码
+										<input type="password" name="register.password" onfocus="clearvalue(this.id)" id="password" size="18" maxlength="30" />
+										<br><br>
+										<div class="enter">
+										<input type="submit" name="login791" class="buttom" value="登录" > 
+										</div>
+									</td>
+								</tr>
+									</table>
+								</form>
+							</td>
+						</tr>
+					</table>
+					
+				</td>
+			</tr>
+		</table>
+		<table width="760" height="87" border="0" align="center"
+			cellpadding="0" cellspacing="0">
+			<tr>
+				<td height="87" align="center" background="image/foot.jpg">
+					<p class="style16">
+						<strong>2012</strong>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
